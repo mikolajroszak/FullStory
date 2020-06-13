@@ -1,0 +1,147 @@
+{
+	"License": {
+		"APIId": "emSzmal 3 PRO + eCommerce + Biznes xxx@xxx.pl 06.07.2016",
+		"APIKey": "3B58041CCB7B356F6D5C94D8B01754B9"
+	}
+}
+{
+	"SessionId":"0d37bcd7-9ec1-4d28-95b9-b0cdc15f5254"
+}
+{
+	"SessionId": "0d37bcd7-9ec1-4d28-95b9-b0cdc15f5254",
+	"ProviderId": 0,
+	"ProviderConfiguration": "",
+	"Authentication": {
+		"UserLogin": "LOGIN",
+		"UserPassword": "HASŁO",
+		"UserContext": "",
+		"TokenValue": ""
+	},
+	"License": {
+		"APIId": "emSzmal 3 PRO + eCommerce + Biznes xxx@xxx.pl 06.07.2016",
+		"APIKey": "3B58041CCB7B356F6D5C94D8B01754B9"
+	}
+}
+                    
+{
+	"Accounts": [
+		{
+			"AccountNumber": "15114020040000300276195487",
+			"AccountCurrency": "PLN",
+			"AccountAvailableFunds": 50.5,
+			"AccountBalance": 100.5
+		},
+		{
+			"AccountNumber": "65114020040000341200653930",
+			"AccountCurrency": "EUR",
+			"AccountAvailableFunds": 75.56,
+			"AccountBalance": 158.23
+		},
+		{
+			"AccountNumber": "02114020040000760238012537",
+			"AccountCurrency": "CHF",
+			"AccountAvailableFunds": 0,
+			"AccountBalance": 0
+		}
+	]
+}
+{
+	"SessionId": "0d37bcd7-9ec1-4d28-95b9-b0cdc15f5254",
+	"ProviderId": 0,
+	"ProviderConfiguration": "",
+	"Authentication": {
+		"UserLogin": "LOGIN",
+		"UserPassword": "HASŁO",
+		"UserContext": "",
+		"TokenValue": ""
+	},
+	"License": {
+		"APIId": "emSzmal 3 PRO + eCommerce + Biznes xxx@xxx.pl 06.07.2016",
+		"APIKey": "3B58041CCB7B356F6D5C94D8B01754B9"
+	},
+	"Data": {
+		"AccountNumber": "15114020040000300276195487",
+		"DateSince": "2016-07-01",
+		"DateTo": "2016-07-02"
+	}
+}
+{
+	"Transactions": [
+		{
+			"TransactionRefNumber": "7767",
+			"TransactionOperationDate": "2016-07-01T00:00:00",
+			"TransactionBookingDate": "2016-07-01T00:00:00",
+			"TransactionAmount": -0.01,
+			"TransactionBalance": 2.43,
+			"TransactionType": "PRZELEW ZEWNĘTRZNY WYCHODZĄCY",
+			"TransactionDescription": "XXX"
+		},
+		{
+			"TransactionRefNumber": "7768",
+			"TransactionOperationDate": "2016-07-01T00:00:00",
+			"TransactionBookingDate": "2016-07-01T00:00:00",
+			"TransactionAmount": -0.01,
+			"TransactionBalance": 2.42,
+			"TransactionType": "PRZELEW ZEWNĘTRZNY WYCHODZĄCY",
+			"TransactionDescription": "XXXYYYZZZ"
+		},
+		{
+			"TransactionRefNumber": "7769",
+			"TransactionOperationDate": "2016-07-01T00:00:00",
+			"TransactionBookingDate": "2016-07-01T00:00:00",
+			"TransactionAmount": -100.01,
+			"TransactionBalance": 899.04,
+			"TransactionType": "PRZELEW ZEWNĘTRZNY WYCHODZĄCY",
+			"TransactionDescription": "XXX\r\n71260414621844457350000001\r\nZ MB DO BNP PARIBAS FIRMOWY"
+		}
+	]
+}
+{
+	"SessionId": "0d37bcd7-9ec1-4d28-95b9-b0cdc15f5254",
+	"ProviderId": 0,
+	"ProviderConfiguration": "",
+	"Authentication": {
+		"UserLogin": "LOGIN",
+		"UserPassword": "HASŁO",
+		"UserContext": "",
+		"TokenValue": ""
+	},
+	"License": {
+		"APIId": "emSzmal 3 PRO + eCommerce + Biznes xxx@xxx.pl 06.07.2016",
+		"APIKey": "3B58041CCB7B356F6D5C94D8B01754B9"
+	}
+}
+{
+	AuthenticationMethod: "SMS",
+	PreAuthenticationCode: "",
+	AuthenticationCodeHint: "SMS nr X z dn. dd.MM.rrrr"
+}
+{
+	"SessionId": "0d37bcd7-9ec1-4d28-95b9-b0cdc15f5254",
+	"ProviderId": 0,
+	"ProviderConfiguration": "",
+	"Authentication": {
+		"UserLogin": "LOGIN",
+		"UserPassword": "HASŁO",
+		"UserContext": "",
+		"TokenValue": ""
+	},
+	"License": {
+		"APIId": "emSzmal 3 PRO + eCommerce + Biznes xxx@xxx.pl 06.07.2016",
+		"APIKey": "3B58041CCB7B356F6D5C94D8B01754B9"
+	},
+	"AuthenticationCode": "kod SMS lub wskaznie tokena"
+}
+{
+	
+}
+{
+	"SessionId": "0d37bcd7-9ec1-4d28-95b9-b0cdc15f5254",
+	"License": {
+		"APIId": "emSzmal 3 PRO + eCommerce + Biznes xxx@xxx.pl 06.07.2016",
+		"APIKey": "3B58041CCB7B356F6D5C94D8B01754B9"
+	}
+}
+{
+	
+}
