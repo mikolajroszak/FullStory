@@ -1,0 +1,118 @@
+var emSzmalBankingAPI = new function () {
+
+    var _sessionId = '';
+
+    //zalogowanie do usługi emSzmal Banking API 
+    this.SayHello = function () {
+
+        //Cookies.remove('SessionId', { path: '/' });
+
+        var APIId = $('#APIId').val();
+        var APIKey = $('#APIKey').val();
+        xhr = $.ajax({
+            url: 'http://api.emszmal.pl/Common/SayHello',
+            method: 'POST',
+            timeout: 60000,
+            dataType: 'json',
+            contentType: 'application/json',
+            headers: {
+                Accept: 'application/json; charset=utf-8',
+            },
+            data: JSON.stringify({
+                "License": {
+                    "APIId": APIId,
+                    "APIKey": APIKey
+                }
+            })
+        }
+);
+        xhr.done(SayHelloDoneCallback);
+        xhr.fail(FailCallback);
+
+    }
+
+    //wylogowanie z usługi emSzmal Banking API 
+    this.SayBye = function () {
+
+        var APIId = $('#APIId').val();
+        var APIKey = $('#APIKey').val();
+        xhr = $.ajax({
+            url: 'http://api.emszmal.pl/Common/SayBye',
+            method: 'POST',
+            timeout: 60000,
+            dataType: 'json',
+            contentType: 'application/json',
+            headers: {
+                Accept: 'application/json; charset=utf-8',
+            },
+            data: JSON.stringify({
+                "SessionId": _sessionId,
+                "License": {
+                    "APIId": APIId,
+                    "APIKey": APIKey
+                }
+            })
+        }
+);
+        xhr.done(SayByeDoneCallback);
+        xhr.fail(FailCallback);
+
+    }
+
+
+    //pobranie listy rachunków bankowych 
+    this.GetAccountsList = function () {
+        
+        var APIId = $('#APIId').val();
+        var APIKey = $('#APIKey').val();
+        xhr = $.ajax({
+            url: 'http://api.emszmal.pl/Accounts/GetAccountsList',
+            method: 'POST',
+            timeout: 60000*5,
+            dataType: 'json',
+            contentType: 'application/json',
+            headers: {
+                Accept: 'application/json; charset=utf-8',
+            },
+            data: JSON.stringify({
+                "SessionId": _sessionId,
+                "ProviderId": 0,
+                "Authentication": {
+                    "UserLogin": "LOGIN",
+                    "UserPassword": "PASSWORD",
+                    "UserContext": ""
+                },
+                "License": {
+                    "APIId": APIId,
+                    "APIKey": APIKey
+                }
+            })
+        }
+);
+        xhr.done(GetAccountsListDoneCallback);
+        xhr.fail(FailCallback);
+
+    }
+
+    //
+
+    SayHelloDoneCallback = function (data, textStatus, jqXHR) {
+        _sessionId = data.SessionId;
+        alert('SessionId: ' + data.SessionId);
+    };
+
+    SayByeDoneCallback = function (data, textStatus, jqXHR) {        
+        alert('Bye!');
+    };
+
+    GetAccountsListDoneCallback = function (data, textStatus, jqXHR) {
+        alert('Accounts: ' + JSON.stringify(data));
+    };
+
+    FailCallback = function (jqXHR, textStatus, errorThrown) {
+        alert('Error: ' + jqXHR.responseText);
+    };
+
+
+
+}
